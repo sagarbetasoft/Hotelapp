@@ -1,0 +1,7 @@
+{
+  "name": "stirling Arms Hotel",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
