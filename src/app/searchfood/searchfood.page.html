@@ -1,0 +1,46 @@
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="headingfood">
+
+    <ion-searchbar slote="start" show-clear-button="focus" value="Search Food" placeholder="Search Food"></ion-searchbar>
+    <ion-icon slot="end" name="filter-circle-sharp"></ion-icon>
+
+  </div>
+  <span>3 item found</span>
+  
+
+  <div class="menu-section">
+    <h2>Menu</h2>
+
+    <ion-list >
+      <div class="boder-botam" *ngFor="let item of items">
+        <ion-item lines="inset" >
+          <ion-label><h3>{{item.name}}</h3>
+            <h6>{{item.price}}</h6>
+            <h5>{{item.description}}</h5>
+          </ion-label>
+          <ion-thumbnail slot="end">
+            <img alt="img2" src="{{item.thumnailimage}}" />
+          </ion-thumbnail>
+          <ion-button size="small" slot="end">ADD</ion-button>
+        </ion-item>
+      </div>
+
+    </ion-list>
+
+  </div>
+
+  <div class=" latest-search">
+    <div class="sliders-ls">
+      <h2>Upcoming Recipes</h2>
+      <ion-slides>
+        <ion-slide>
+          <div class="slide-cnt" *ngFor="let item of itemsfoods">
+            <ion-img src="{{item.slideimage}}"></ion-img>
+            <ion-card-title>{{item.foodname}} </ion-card-title>
+          </div>
+          
+        </ion-slide>
+      </ion-slides>
+    </div>
+  </div>
+</ion-content>

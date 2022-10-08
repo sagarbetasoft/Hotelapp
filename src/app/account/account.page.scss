@@ -1,0 +1,162 @@
+ion-content {
+    // background: url('../../assets/chad-montano-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    --background:	var(--ion-color-screenbg);
+
+
+
+    .headingfood-cart {
+        background: var(--ion-color-light-tint);
+        border-radius: 12px;
+        padding: 10px;
+        display: flex;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: space-between;
+        align-items: center;
+
+        ion-icon {
+            width: 30px;
+            height: 30px;
+
+        }
+
+    }
+
+    .profile-section {
+        background: var(--ion-color-hotelbg-contrast);
+        padding: 10px;
+        margin-top: 10px;
+
+        .profile-edit {
+            background: var(--ion-color-light-tint);
+            padding: 10px;
+            display: flex;
+            flex-wrap: nowrap;
+            align-content: center;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+
+            ion-button {
+                height: 28px;
+                --border-radius: 5px;
+                width: 56px;
+                font-size: 16px;
+                line-height: 20px;
+                font-weight: 400;
+                --background: var(--ion-color-hotelbg);
+            }
+
+
+        }
+
+        ion-card {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 0px;
+            margin-right: 0px;
+            border-radius: 0px;
+            padding: 10px;
+            background: #f1c232;
+            border: 2px dashed #000;
+            border-radius: 12px;
+
+
+            ion-label {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-content: center;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            span {
+
+                p {
+                    font-size: 18px;
+                    line-height: 25px;
+                    text-align: center;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    color: var(--ion-color-light-contrast);
+                    font-weight: 600;
+                }
+            }
+
+            .centrcard-btn {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                align-content: center;
+                justify-content: center;
+                align-items: center;
+
+                span {
+                    --background: transparent;
+                    --inner-border-width: 0px 0px 0px 0px;
+                    --padding-start: 0px;
+                    --padding-end: 0px;
+
+                    ion-button {
+                        --background: transparent;
+                        color: var(--ion-color-light-contrast);
+
+                        height: 32px;
+                        border-radius: 3px;
+                        font-size: 13px;
+                        margin: 0px 4px;
+                        width: 90px;
+                        border: 1px solid #302d2d;
+
+
+                    }
+
+                }
+            }
+        }
+    }
+
+    .itm-list-section {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        --background: var(--ion-color-danger-contrast);
+
+        ion-item {
+            ion-label {
+                h2 {
+                    font-size: 14px;
+                }
+            }
+
+        }
+
+        .helpsupport {
+            ion-item {
+                h2 {
+                    margin: 0px;
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .btn-logout {
+            // background: var(--ion-color-danger-contrast);
+            margin-top: 10px;
+            text-align: center;
+
+            ion-button{
+             --background: var(--ion-color-hotelbg);
+                margin-top: 10px;
+                text-align: center;
+                font-size: 18px;
+                font-weight: 500;
+            }
+        
+
+
+        }
+    }
+}

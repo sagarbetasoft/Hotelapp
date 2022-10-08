@@ -1,83 +1,90 @@
 <ion-content [fullscreen]="true" class="ion-padding">
-  <ion-item>
-  <ion-segment value="buttons">
-    <ion-segment-button value="default">
-      <ion-label>Delivery</ion-label>
-    </ion-segment-button>
-    <ion-segment-button value="segment">
-      <ion-label>TakeAway</ion-label>
-    </ion-segment-button>
-    <ion-segment-button value="buttons">
-      <ion-label>Dinein</ion-label>
-    </ion-segment-button>
-    <ion-segment-button value="segment">
-      <ion-label>Reservation</ion-label>
-    </ion-segment-button>
-  </ion-segment>
+  <div class="headingfood">
+    <div class="toptext">
+      <h1>Delicious Food</h1>
+      <p>Ready to delivered for you </p>
+    </div>
+    <div class="deliver-manimage">
+      <ion-img src="../../assets/dman.png"></ion-img>
+    </div>
+  </div>
+  <ion-item >
+    <ion-segment value="buttons" >
+      <ion-segment-button value="delivery">
+        <ion-label>Delivery</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="takeaway">
+        <ion-label>TakeAway</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="dinein">
+        <ion-label>Dinein</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="reservtion">
+        <ion-label>Reservation</ion-label>
+      </ion-segment-button>
+    </ion-segment>
 
-    <ion-icon name="calendar-sharp"></ion-icon>
+    <ion-icon name="calendar-outline"></ion-icon>
 
-</ion-item> 
+  </ion-item>
 
-  
-<div class="sliders-ls">
 
-  <ion-slides>
+  <div class="simple-slide">
+
+    <ion-slides>
       <ion-slide>
         <div class="slide-cnt">
-      <ion-img src="../../assets/veg2-.png" ></ion-img>
-      
-        </div>
-          <div class="slide-cnt">
-      <ion-img src="../../assets/veg2-.png" ></ion-img>
-    
+          <ion-img src="../../assets/img4.png"></ion-img>
         </div>
         <div class="slide-cnt">
-          <ion-img src="../../assets/veg2-.png" ></ion-img>
-           
-            </div>
-      </ion-slide>
-  </ion-slides>
-</div>
+          <ion-img src="../../assets/img2.png"></ion-img>
 
-<div class=" latest-search">
-  <div class="sliders-ls">
-    <h2>Categories</h2>
-    <ion-slides>
-        <ion-slide>
-          <ion-item>
-            <ion-img src="../../assets/veg2-.png" ></ion-img>
-            <ion-card-title>SALADS</ion-card-title>
-          </ion-item>
-            <ion-item>
-            <ion-img src="../../assets/veg2-.png" ></ion-img>
-            <ion-card-title>SALADS</ion-card-title>
-          </ion-item>
-         
-            <div class="slide-cnt">
-              <ion-img src="../../assets/veg2-.png" ></ion-img>
-          <ion-card-title>SIDES </ion-card-title>
-          </div>
-          <div class="slide-cnt">
-            <ion-img src="../../assets/veg2-.png" ></ion-img>
-              <ion-card-title>PIZZAS</ion-card-title>
-              </div>
-              <div class="slide-cnt">
-                <ion-img src="../../assets/veg2-.png" ></ion-img>
-                  <ion-card-title>BURGERS</ion-card-title>
-                  </div>
-                  <div class="slide-cnt">
-                    <ion-img src="../../assets/veg2-.png" ></ion-img>
-                      <ion-card-title>DIMATINA</ion-card-title>
-                      </div>
-                      <div class="slide-cnt">
-                        <ion-img src="../../assets/veg2-.png" ></ion-img>
-                          <ion-card-title>DESSERTS </ion-card-title>
-                          </div>
-        </ion-slide>
+        </div>
+        <div class="slide-cnt">
+          <ion-img src="../../assets/img4.png"></ion-img>
+        </div>
+
+        <div class="slide-cnt">
+          <ion-img src="../../assets/img2.png"></ion-img>
+
+        </div>
+
+      </ion-slide>
     </ion-slides>
   </div>
-</div>
 
+  <div class=" latest-search">
+    <div class="sliders-ls">
+      <h2>Categories</h2>
+      <ion-slides>
+        <ion-slide>
+          <div class="slide-cnt" *ngFor="let item of itemsfoods">
+            <ion-img src="{{item.slideimage}}"></ion-img>
+            <ion-card-title>{{item.foodname}} </ion-card-title>
+          </div>
+          
+        </ion-slide>
+      </ion-slides>
+    </div>
+  </div>
+  <div class="menu-section">
+    <h2>Menu</h2>
 
-  </ion-content>
+    <ion-list >
+      <div class="boder-botam" *ngFor="let item of items">
+        <ion-item lines="inset" >
+          <ion-icon name="star" slot="start"></ion-icon>
+          <ion-label><h3>{{item.name}}</h3>
+            <h6>{{item.price}}</h6>
+            <h5>{{item.description}}</h5>
+          </ion-label>
+          <ion-thumbnail slot="end">
+            <img alt="img2" src="{{item.thumnailimage}}" />
+          </ion-thumbnail>
+          <ion-button size="small" slot="end">ADD</ion-button>
+        </ion-item>
+      </div>
+    </ion-list>
+
+  </div>
+</ion-content>

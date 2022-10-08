@@ -1,0 +1,102 @@
+ion-content {
+    // background: url('../../assets/chad-montano-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    --background: #100a0aa8;
+    background-image: linear-gradient(to right top, #ffffff, #f5d4f6, #ff9fca, #ff6a7b, #ff4e00);
+    ion-card {
+        margin: 0px;
+    }
+
+    .headingfood {
+        background: var(--ion-color-texthotel-contrast);
+        border-radius: 12px;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-between;
+        align-items: center;
+
+        ion-icon {
+            height: 30px;
+            width: 30px;
+        }
+
+        .toptext {
+
+            h1 {
+                font-size: 20px;
+                margin: 0px;
+                font-weight: 600;
+                line-height: 25px;
+            }
+
+            p {
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 20px;
+                margin: 0px;
+                color: var(--ion-color-medium-contrast);
+            }
+        }
+
+        .deliver-manimage {
+            ion-img {
+                width: 100%;
+                height: 70px;
+            }
+        }
+
+    }
+
+    .mapsection {
+        margin-top: 15px;
+    }
+    .slide-section {
+        margin-top: 20px;
+    }
+
+    .content-about {
+        background: #fff;
+        border-radius: 12px;
+        padding: 10px;
+        margin-top: 20px;
+    
+
+            p {
+                --padding: 10px;
+                text-align: justify;
+            }
+        
+
+      
+
+        .busineshour {
+            ion-card {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                align-content: center;
+                justify-content: space-between;
+                align-items: center;
+                h2 {
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #000;
+                    // padding-left: 16px;
+                }
+                p {
+                    --padding: 10px;
+                    text-align: justify;
+                }
+                ion-icon {
+                    width: 30px;
+                    height: 30px;
+                    
+
+                }
+            }
+        }
+    
+    }
+}

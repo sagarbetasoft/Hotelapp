@@ -1,0 +1,90 @@
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="headingfood">
+    <div class="deliver-manimage">
+      <ion-img src="../../assets/App-logo.png"></ion-img>
+    </div>
+    <div class="toptext">
+      <h1>Book Now</h1>
+    </div>
+
+  </div>
+  <div class="tabs-reservation">
+    <ion-item>
+      <ion-segment value="buttons">
+        <ion-segment-button value="delivery">
+          <ion-label>Delivery</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="takeaway">
+          <ion-label>TakeAway</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="dinein">
+          <ion-label>Dinein</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="reservtion">
+          <ion-label>Reservation</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+    </ion-item>
+
+    <ion-item>
+      <ion-segment value="buttons">
+        <ion-segment-button value="dinein">
+          <ion-label>TABLE RESERVATION </ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="reservtion">
+          <ion-label>EVENT RESERVATION</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+    </ion-item>
+  </div>
+  <div class="eventform">
+    <ion-item>
+      <ion-label position="stacked">FIRST NAME</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">LAST NAME</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+ 
+    <ion-item>
+      <ion-label position="stacked">MOBILE</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">EMAIL</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">DINING DATE</ion-label>
+      <ion-input type="date"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">DINING TIME</ion-label>
+      <ion-input type="time"  ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">GUESTS</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label position="stacked">OCCASSION</ion-label>
+      <ion-select>
+        <ion-select-option value="apples">Apples</ion-select-option>
+        <ion-select-option value="oranges">Oranges</ion-select-option>
+        <ion-select-option value="bananas">Bananas</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">NOTES </ion-label>
+      <ion-textarea ></ion-textarea>
+    </ion-item>
+     <div class="bodertop-btn">
+    <ion-button>RESERVE NOW</ion-button>
+  </div>
+  </div>
+
+
+</ion-content>

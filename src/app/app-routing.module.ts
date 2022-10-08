@@ -31,6 +31,50 @@ const routes: Routes = [
     path: 'verification',
     loadChildren: () => import('./verification/verification.module').then( m => m.VerificationPageModule)
   },
+  {
+    path: 'searchfood',
+    loadChildren: () => import('./searchfood/searchfood.module').then( m => m.SearchfoodPageModule)
+  },
+  {
+    path: 'apply-vouchers',
+    loadChildren: () => import('./apply-vouchers/apply-vouchers.module').then( m => m.ApplyVouchersPageModule)
+  },
+  {
+    path: 'cart',
+    loadChildren: () => import('./cart/cart.module').then( m => m.CartPageModule)
+  },
+  {
+    path: 'payment',
+    loadChildren: () => import('./payment/payment.module').then( m => m.PaymentPageModule)
+  },
+  {
+    path: 'reservation',
+    loadChildren: () => import('./reservation/reservation.module').then( m => m.ReservationPageModule)
+  },
+  {
+    path: 'contact-us',
+    loadChildren: () => import('./contact-us/contact-us.module').then( m => m.ContactUsPageModule)
+  },
+  {
+    path: 'profile',
+    loadChildren: () => import('./profile/profile.module').then( m => m.ProfilePageModule)
+  },
+  {
+    path: 'account',
+    loadChildren: () => import('./account/account.module').then( m => m.AccountPageModule)
+  },
+  {
+    path: 'manage-addresses',
+    loadChildren: () => import('./manage-addresses/manage-addresses.module').then( m => m.ManageAddressesPageModule)
+  },
+  {
+    path: 'add-address',
+    loadChildren: () => import('./add-address/add-address.module').then( m => m.AddAddressPageModule)
+  },
+  {
+    path: 'about-us',
+    loadChildren: () => import('./about-us/about-us.module').then( m => m.AboutUsPageModule)
+  },
 ];
 
 @NgModule({

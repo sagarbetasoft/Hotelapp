@@ -1,0 +1,213 @@
+ion-content {
+    background: url('../../assets/chad-montano-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    --background: #100a0aa8;
+  span{
+    color: var(--ion-color-light-tint);
+  }
+  .search-apply {
+    border: 1px solid #fff;
+    background: #c7beba;
+    border-radius: 12px;
+    margin: 20px 0px;
+    padding: 5px;
+
+
+    ion-button {
+        width: 100%;
+        height: 40px;
+        font-size: 18px;
+        --background: var(--ion-color-hotelbg);
+    }
+    ion-input {
+        --padding-top: 0px;
+        --padding-end: 0px;
+        --padding-bottom: 0px;
+    }
+
+}
+    .headingfood {
+      background: var(--ion-color-light-tint);
+      border-radius: 12px;
+      padding: 10px;
+      display: flex;
+      flex-wrap: nowrap;
+      align-content: center;
+      justify-content: space-between;
+      align-items: center;
+  
+      ion-img {
+        height: 70px;
+    }
+  
+    }
+  
+  
+    ion-item {
+      --padding-start: 0px;
+      --inner-padding-end: 0px;
+      --inner-border-width: 0px 0px 0px 0px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-content: stretch;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      --background: transparent;
+  
+  
+  
+      ion-segment {
+        border-radius: 0px;
+        background: #ccc0;
+  
+        ion-segment-button {
+          // --background: var(--ion-color-hotelbg);
+          margin: 0px 2px;
+          padding: 0px 3px;
+          font-size: 12px;
+          font-weight: 500;
+          border: 1px solid var(--ion-color-medium);
+          --indicator-color: var(--ion-color-hotelbg);
+          font-weight: 500;
+          color: var(--ion-color-medium-contrast);
+        }
+  
+  
+      }
+  
+      ion-icon {
+        color: var(--ion-color-medium-contrast);
+      }
+    }
+  
+    .latest-search {
+      .simple-slide {
+        ion-img {
+          width: 100%;
+          height: 180px;
+          min-width: 120px;
+        }
+      }
+  
+      .sliders-ls {
+  
+        h2 {
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 25px;
+          color: var(--ion-color-medium-contrast);
+          margin: 9px 0px 9px 0px;
+        }
+  
+        ion-slides {
+          background: rgb(255 255 255 / 59%);
+          border-radius: 12px;
+  
+  
+          ion-slide {
+            .swiper-slide {
+              justify-content: flex-end;
+            }
+  
+            .slide-cnt {
+  
+              ion-img {
+                min-width: 90px;
+                // height: 200px;
+              }
+  
+              ion-card-title {
+                font-size: 13px;
+                font-weight: 500;
+                line-height: 18px;
+                padding: 8px 0px;
+              }
+            }
+          }
+        }
+      }
+    }
+  
+    .menu-section {
+  
+      margin: 20px 0px;
+  
+      h2 {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 25px;
+        color: var(--ion-color-medium-contrast);
+        margin: 9px 0px 9px 0px;
+      }
+  
+      .list-ios {
+        background: rgba(255, 255, 255, 0.4509803922);
+        border-radius: 13px 13px 13px 13px;
+        color: var(--ion-color-medium-contrast);
+        padding: 8px;
+      }
+  
+      .price-menu-list {
+  
+        
+        ion-item {
+        
+          --inner-border-width: 0px 0px 1px 0px;
+  
+          ion-img {
+            width: 50px;
+            height: 50px;
+          }
+     
+  
+          ion-label {
+            h3{
+              font-size: 14px;
+              font-weight: 400;
+              white-space: pre-wrap;
+              line-height: 18px;
+              color: var(--ion-color-light-contrast);
+              margin: 9px 0px 9px 0px;
+            }
+            h5 {
+              color: #000;
+              white-space: pre-wrap;
+              font-size: 13px;
+              font-weight: 500;
+              line-height: 18px;
+          
+            }
+            .sc-ion-label-ios-s>p{
+              color: var(--ion-color-light-contrast); 
+         font-size: 14px;
+          font-weight: 600;
+            }
+      
+          }
+      
+        }
+  
+      }
+      .boder-botam {
+        border-bottom: 1px solid #fff;
+        
+    }
+    ion-button {
+   
+      --background: var(--ion-color-hotelbg);
+      font-size: 13px;
+      font-weight: 400;
+  }
+    }
+  
+    ion-icon {
+      width: 20px;
+      height: 20px;
+     
+    }
+  
+  
+  }

@@ -1,0 +1,33 @@
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="headingfood">
+    <ion-icon name="arrow-back-circle"></ion-icon>
+    <ion-img src="../../assets/App-logo.png"></ion-img>
+    <h2>APPLY VOUCHERS</h2>
+  </div>
+
+<div  class="search-apply">
+  <ion-item>
+    <ion-input slot="start" type="text" placeholder="Enter Voucher Code"> </ion-input>
+    <ion-button slot="end">Apply</ion-button>
+  </ion-item>
+</div>
+
+  <div class="menu-section">
+    <h2>AVAILABLE VOUCHERS</h2>
+
+    <ion-list >
+      <div class="boder-botam" *ngFor="let item of items">
+        <ion-item lines="inset" >
+        <ion-img src="../../assets/startapplyvoucher.png"></ion-img>
+          <ion-label><h3>{{item.name}}</h3>
+            <h5>{{item.description}}</h5>
+          </ion-label>
+          <ion-button size="block" slot="end">Apply</ion-button>
+        </ion-item>
+      </div>
+
+    </ion-list>
+
+  </div>
+
+</ion-content>

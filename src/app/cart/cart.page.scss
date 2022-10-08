@@ -1,0 +1,173 @@
+ion-content {
+    background: url('../../assets/chad-montano-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    --background: #100a0aa8;
+
+    span {
+        color: var(--ion-color-light-tint);
+    }
+
+    .headingfood-cart {
+        background: var(--ion-color-light-tint);
+        border-radius: 12px;
+        padding: 10px;
+        display: flex;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: space-between;
+        align-items: center;
+
+        ion-img {
+            height: 70px;
+        }
+
+        ion-icon {
+            width: 30px;
+            height: 30px;
+
+        }
+
+    }
+
+    .menu-section-cart {
+        ion-list {
+            margin: 20px 0px;
+            // background: rgba(255, 255, 255, 0.4509803922);
+            border-radius: 13px 13px 13px 13px;
+            // color: var(--ion-color-medium-contrast);
+            padding: 8px;
+
+            .boder-botam {
+                border-bottom: 1px solid var(--ion-color-light-shade);
+
+            }
+
+            h2 {
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 25px;
+                color: var( --ion-color-light-contrast); 
+                margin: 9px 0px 9px 0px;
+            }
+
+            ion-item {
+                --padding-start: 0px;
+                    --inner-padding-end: 0px;
+                --background: transparent;
+                --inner-border-width: 0px 0px 0px 0px;
+
+                ion-img {
+                    width: 50px;
+                    height: 50px;
+                }
+
+                ion-label {
+                    
+                  
+                    h3 {
+                        font-size: 14px;
+                        font-weight: 400;
+                        white-space: pre-wrap;
+                        line-height: 18px;
+                        color: var(--ion-color-light-contrast);
+                        margin: 9px 0px 9px 0px;
+                    }
+
+                    h5 {
+                        color: #000;
+                        white-space: pre-wrap;
+                        font-size: 13px;
+                        font-weight: 500;
+                        line-height: 18px;
+
+                    }
+
+                    p {
+                        color: var(--ion-color-light-contrast);
+                        font-size: 14px;
+                        font-weight: 600;
+                    }
+
+                }
+
+            }
+
+            ion-button {
+
+                --background: var(--ion-color-hotelbg);
+                font-size: 13px;
+                font-weight: 400;
+            }
+
+            ion-icon {
+                width: 30px;
+                height: 23px;
+            }
+        }
+    }
+
+    .Any-Allergies {
+        ion-item {
+            // --background: transparent;
+
+            border: 1px solid var(--ion-color-medium-contrast);
+            // background: #c7beba;
+            border-radius: 12px;
+            margin: 20px 0px;
+            // padding: 5px;
+
+            ion-button {
+                width: 100%;
+                height: 40px;
+                font-size: 18px;
+                --background: var(--ion-color-hotelbg);
+            }
+
+            ion-input {
+                --padding-top: 0px;
+                --padding-end: 0px;
+                --padding-bottom: 0px;
+            }
+
+        }
+
+    }
+.offer-section{
+    ion-list{
+      
+            border-radius: 12px;
+            padding: 10px;
+            h2 {
+                margin-top: 0px;
+                font-size: 18px;
+                line-height: 20px;
+            }
+        ion-item{
+            --padding-start: 0px;
+            --inner-border-width: 0px 0px 0px 0px;
+            h3{
+                font-size: 16px;
+                text-align: center;
+            }
+           
+        }
+    }
+}
+.botm-veiw-details{
+    ion-list{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-between;
+        align-items: center;
+    }
+    ion-select {
+        font-size: 16px;
+        font-weight: 600;
+    }
+    }
+
+
+
+}

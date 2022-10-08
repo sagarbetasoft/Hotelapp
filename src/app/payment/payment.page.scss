@@ -1,0 +1,83 @@
+ion-content {
+
+
+    .headingfood-payment {
+        background: var(--ion-color-light-tint);
+        border-radius: 12px;
+        padding: 10px;
+        display: flex;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: space-between;
+        align-items: center;
+
+        ion-img {
+            height: 70px;
+        }
+
+        ion-icon {
+            width: 30px;
+            height: 30px;
+
+        }
+
+    }
+
+    .btnbtm {
+        vertical-align: bottom;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .payment-bg {
+        padding: 10px;
+        border-radius: 12px;
+        margin: 27px 0px;
+        h2 {
+            margin-top: 18px;
+            font-size: 20px;
+            margin: 20px 0px;
+            line-height: 34px;
+        }
+
+        ion-list {
+            // --background:var( --ion-color-medium);
+
+            ion-radio-group { 
+                ion-radio {
+                    border: 1px solid var(  --ion-color-dark);
+                    width: 27px;
+                    height: 27px;
+                    border-radius: 20px;
+                    padding: 0px;
+                    --color-checked: var(--ion-color-hotelbg);
+                }
+                ion-item {
+                    --inner-border-width: 0px 0px 0px 0px;
+                    // --background:var(   --ion-color-medium-tint);
+                    --inner-border-width: 0px 0px 1px 0px;
+                   --padding-start: 0px;
+             --padding-end: 0px;
+                }
+
+            }
+        }
+
+
+
+    }
+
+    ion-button {
+        bottom: 0px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 220px;
+        margin: 40px auto;
+        --border-radius: 12px;
+        --background: var(--ion-color-hotelbg)
+    }
+}
