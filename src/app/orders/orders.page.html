@@ -1,0 +1,128 @@
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="headingfood-cart">
+    <ion-icon name="arrow-back-circle"></ion-icon>
+    <h2>Order Detail</h2>
+    <ion-img src="../../assets/App-logo.png"></ion-img>
+  </div>
+
+
+  <div class="main-billing-section">
+    <div class="order-section">
+      <div class="status-order">
+        <h2>Status</h2>
+        <h2>Ordrered</h2>
+      </div>
+
+      <div class="address">
+        <h2>Address</h2>
+        <span>355 Scarborough Beach Rd, Osborne Park
+          WA 6017, Australia</span>
+      </div>
+
+    </div>
+
+    <div class="billing-section">
+      <div class="heaidng-billing">
+        <h3>Billing Details</h3>
+      </div>
+      <ion-item lines="inset">
+        <ion-label slot="start">Bread & Dips x 2</ion-label>
+        <ion-label slot="end">$29</ion-label>
+      </ion-item>
+      <ion-item lines="inset">
+        <ion-label slot="start">Bu!alo Chicken Wings x 1</ion-label>
+        <ion-label slot="end">$13</ion-label>
+      </ion-item>
+      <ion-item lines="inset">
+        <ion-label slot="start">Crispy Buttermilk Chicken Tenders x 1</ion-label>
+        <ion-label slot="end">$16</ion-label>
+      </ion-item>
+      <ion-item lines="inset">
+        <ion-label slot="start">Fried Chicken Burger x 1</ion-label>
+        <ion-label slot="end">$25</ion-label>
+      </ion-item>
+      <ion-item lines="inset">
+        <ion-label slot="start">Mini Apple Doughnuts x 1</ion-label>
+        <ion-label slot="end">$12</ion-label>
+      </ion-item>
+
+    </div>
+    <div class="item-total-gst">
+      <ion-item lines="inset">
+        <ion-label slot="start">Item Total</ion-label>
+        <ion-label slot="end">$95</ion-label>
+      </ion-item>
+      <ion-item lines="inset">
+        <ion-label slot="start">Delivery</ion-label>
+        <ion-label slot="end">$10</ion-label>
+      </ion-item>
+      <ion-item lines="inset">
+        <ion-label slot="start">GST</ion-label>
+        <ion-label slot="end">$12</ion-label>
+      </ion-item>
+    </div>
+
+    <div class="gradn-totl">
+      <ion-item lines="inset">
+        <ion-label slot="start">Grand Total</ion-label>
+        <ion-label slot="end">$117</ion-label>
+      </ion-item>
+    </div>
+  </div>
+
+  <!-- model -->
+  <div clas="model-section">
+<ion-modal #modal trigger="open-modal">
+    <ng-template>
+      <ion-content>
+        <ion-toolbar>
+          <h2>RATE ORDER</h2>
+          <ion-buttons slot="end">
+            <ion-button color="light" (click)="modal.dismiss()">X</ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+        <ion-list>
+          <ion-label>
+            <h2>FOOD</h2>
+          </ion-label>
+          <ion-item>
+              <ion-icon color="warning" name="star"></ion-icon> 
+              <ion-icon color="warning" name="star"></ion-icon> 
+              <ion-icon color="warning" name="star"></ion-icon> 
+              <ion-icon name="star"></ion-icon> 
+              <ion-icon name="star"></ion-icon>  
+          </ion-item>
+     
+        </ion-list>
+
+        <ion-list>
+          <ion-label>
+            <h2>DELIVERY</h2>
+          </ion-label>
+          <ion-item>
+              <ion-icon color="warning" name="star"></ion-icon> 
+              <ion-icon color="warning" name="star"></ion-icon> 
+              <ion-icon color="warning" name="star"></ion-icon> 
+              <ion-icon color="warning" name="star"></ion-icon> 
+              <ion-icon color="warning" name="star"></ion-icon> 
+          </ion-item>
+          <div class="btn-submit">
+            <ion-button> Submit</ion-button>      </div>
+        </ion-list>
+       
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+
+  <div class="botm-btn">
+    <ion-item>
+      <ion-button slot="start"> Email Invoice </ion-button>
+      <!-- <ion-button slot="end"> RATE ORDER</ion-button> -->
+      <ion-button id="open-modal" expand="block">Rate Order</ion-button>
+    </ion-item>
+  </div>
+ 
+</div>
+
+
+</ion-content>

@@ -1,0 +1,100 @@
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="headingfood-cart">
+    <!-- <ion-icon name="arrow-back-circle"></ion-icon> -->
+    <h2>Account
+    </h2>
+    <ion-img id="open-modal" expand="block" src="../../assets/QR.png"></ion-img>
+    
+  </div>
+  <!-- model -->
+
+  <div class="model-section">
+    <ion-modal #modal trigger="open-modal">
+      <ng-template>
+        <ion-toolbar>
+          <ion-label>Scane QR Code</ion-label>
+          <ion-buttons slot="end">
+            <ion-button color="light" (click)="modal.dismiss()">X</ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      
+          <ion-img src="../../assets/qr2.png"></ion-img>
+        
+
+      </ng-template>
+    </ion-modal>
+
+  </div>
+
+
+
+  <!-- model -->
+
+
+  <div class="profile-section">
+    <div class="profile-edit">
+      <ion-avatar>
+        <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+      </ion-avatar>
+      <ion-label>
+        <h2>John Doe</h2>
+        <p>johndoe12@gmail.com</p>
+        <ion-progress-bar></ion-progress-bar>
+      </ion-label>
+      <ion-button>Edit</ion-button>
+    </div>
+    <ion-card>
+      <ion-label>
+        <p>Gold Membership</p>
+        <p>5000</p>
+      </ion-label>
+      <span>
+        <p>Available Balance</p>
+        <p>5600</p>
+      </span>
+      <div class="centrcard-btn">
+        <span>
+          <ion-button>Satement</ion-button>
+          <ion-button>Services</ion-button>
+          <ion-button>Manage</ion-button>
+        </span>
+      </div>
+    </ion-card>
+  </div>
+
+  <div class="itm-list-section">
+    <ion-item detail="true">
+      <ion-label>
+        <h2>Manage Address </h2>
+      </ion-label>
+    </ion-item>
+    <ion-item detail="true">
+      <ion-label>
+        <h2>My Orders </h2>
+      </ion-label>
+    </ion-item>
+    <div class="helpsupport">
+      <ion-item>
+
+        <h2>HELP & SUPPORT</h2>
+
+      </ion-item>
+    </div>
+    <ion-item detail="true">
+      <ion-label>
+        <h2>Legal, Terms & Conditions</h2>
+      </ion-label>
+    </ion-item>
+    <!-- 
+    <div class="btn-logout">
+      <ion-button>
+        <ion-icon name="log-out-outline"></ion-icon>
+        Log out
+      </ion-button>
+    </div> -->
+
+  </div>
+
+
+
+</ion-content>

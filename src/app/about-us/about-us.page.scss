@@ -1,8 +1,9 @@
 ion-content {
     // background: url('../../assets/chad-montano-bg.jpg') no-repeat center center fixed;
-    background-size: cover;
-    --background: #100a0aa8;
+    // background-size: cover;
+--background: #100a0aa8;
     background-image: linear-gradient(to right top, #ffffff, #f5d4f6, #ff9fca, #ff6a7b, #ff4e00);
+    // --background:transparent;
     ion-card {
         margin: 0px;
     }

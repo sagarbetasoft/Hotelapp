@@ -75,6 +75,22 @@ const routes: Routes = [
     path: 'about-us',
     loadChildren: () => import('./about-us/about-us.module').then( m => m.AboutUsPageModule)
   },
+  {
+    path: 'orders',
+    loadChildren: () => import('./orders/orders.module').then( m => m.OrdersPageModule)
+  },
+  {
+    path: 'order',
+    loadChildren: () => import('./order/order.module').then( m => m.OrderPageModule)
+  },
+  {
+    path: 'qr-account',
+    loadChildren: () => import('./qr-account/qr-account.module').then( m => m.QRAccountPageModule)
+  },
+  {
+    path: 'order-success',
+    loadChildren: () => import('./order-success/order-success.module').then( m => m.OrderSuccessPageModule)
+  },
 ];
 
 @NgModule({

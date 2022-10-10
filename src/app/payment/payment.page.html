@@ -10,7 +10,7 @@
     <ion-radio-group value="payment">
       <ion-item>
         <ion-label>Payment Method 1</ion-label>
-        <ion-radio slot="end" value=""></ion-radio>
+        <ion-radio  id="open-modal" expand="block"slot="end" value=""></ion-radio>
       </ion-item>
       </ion-radio-group>
       <ion-radio-group value="payment">
@@ -25,5 +25,26 @@
     <div class="btnbtm">
       <ion-button>Pay Now</ion-button>
     </div>
+
+      <!-- model -->
+
+  <div class="model-section">
+    <ion-modal #modal trigger="open-modal">
+      <ng-template>
+        <ion-toolbar>
+          
+          <ion-buttons slot="end">
+            <ion-button color="light" (click)="modal.dismiss()">X</ion-button>
+          </ion-buttons>
+
+        </ion-toolbar>
+        <ion-icon name="checkmark-circle-outline"></ion-icon>
+        <h2>Order Placed Successfully</h2>
+        
+
+      </ng-template>
+    </ion-modal>
+
+  </div>
 
 </ion-content>

@@ -1,8 +1,8 @@
 ion-content {
  
     background-size: cover;
-     --background: var( --ion-color-screenbg);
-
+--background: #100a0aa8;
+    background-image: linear-gradient(to right top, #ffffff, #f5d4f6, #ff9fca, #ff6a7b, #ff4e00);
 
     .headingfood {
         background: var(--ion-color-tertiary-contrast);

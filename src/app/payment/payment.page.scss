@@ -81,3 +81,40 @@ ion-content {
         --background: var(--ion-color-hotelbg)
     }
 }
+ion-modal {
+    margin-left: 16px;
+    margin-right: 16px;
+    --height: 290px;
+    --border-radius: 16px;
+    --box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    ion-toolbar {
+        --background: var(--ion-color-hotelbg);
+        --color: white;
+    }
+    ion-button {
+        --background: var(--ion-color-texthotel);
+        height: 38px;
+        --border-radius: 20px;
+        margin: 10px 0px;
+    }
+    ion-icon {
+        height: 220px;
+        width: 100%;
+        color: #55af11;
+    
+    }
+    h2 {
+        text-align: center;
+        margin-top: 18px;
+        margin-bottom: 18px;
+    }
+    .btn-submit{
+        ion-button {
+            --background: var(--ion-color-texthotel);
+            height: 38px;
+            --border-radius: 20px;
+            margin: 10px 0px;
+        } 
+    }
+
+}
